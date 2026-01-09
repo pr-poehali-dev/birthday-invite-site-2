@@ -203,7 +203,7 @@ export default function Index() {
                         г. Симферополь
                       </p>
                       <a 
-                        href="https://yandex.ru/maps/-/CDdyaBwh" 
+                        href="https://yandex.ru/maps/959/simferopol/house/dolgorukovskaya_ulitsa_38/Z00YcwRiTkUFQFpufXV1cnRlYg==/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -225,7 +225,7 @@ export default function Index() {
               <Card className="bg-card/80 backdrop-blur border-border/50 overflow-hidden">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=34.104588%2C44.947121&z=17&l=map&pt=34.104588,44.947121,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=34.091380%2C44.956530&z=17&l=map&pt=34.091380,44.956530,pm2rdm"
                     width="100%"
                     height="400"
                     frameBorder="0"
