@@ -68,19 +68,25 @@ export default function Index() {
             <div className="text-8xl">🎉</div>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-accent-foreground to-primary bg-clip-text text-transparent leading-tight">
+          <div className="mb-4">
+            <span className="inline-block px-6 py-2 bg-gradient-to-r from-primary to-accent-foreground rounded-full text-white text-lg md:text-xl font-semibold shadow-lg animate-scale-in">
+              Sweet 16
+            </span>
+          </div>
+          
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-accent-foreground to-primary bg-clip-text text-transparent leading-tight px-4">
             Приглашаю на<br />День Рождения
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-2xl mx-auto font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-12 max-w-2xl mx-auto font-light px-4">
             Буду рад разделить этот особенный день с тобой
           </p>
           
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex gap-3 sm:gap-4 justify-center flex-wrap px-4">
             <Button 
               size="lg" 
               onClick={() => scrollToSection('rsvp')}
-              className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               Подтвердить присутствие
               <Icon name="ArrowRight" className="ml-2" size={20} />
@@ -90,7 +96,7 @@ export default function Index() {
               size="lg" 
               variant="outline"
               onClick={() => scrollToSection('details')}
-              className="text-lg px-8 py-6 bg-background/50 backdrop-blur hover:bg-background/80 transition-all hover:scale-105"
+              className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 bg-background/50 backdrop-blur hover:bg-background/80 transition-all hover:scale-105"
             >
               Подробности
             </Button>
@@ -105,8 +111,8 @@ export default function Index() {
       <section id="about" className="py-24 bg-gradient-to-b from-background/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+            <div className="text-center mb-16 animate-fade-in px-4">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
                 О событии
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-foreground mx-auto rounded-full" />
@@ -156,8 +162,8 @@ export default function Index() {
       <section id="details" className="py-24 bg-gradient-to-b from-background to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+            <div className="text-center mb-16 animate-fade-in px-4">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
                 Место и время
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-foreground mx-auto rounded-full" />
@@ -243,8 +249,8 @@ export default function Index() {
       <section id="rsvp" className="py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12 animate-fade-in">
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+            <div className="text-center mb-12 animate-fade-in px-4">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
                 Связаться со мной
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -285,8 +291,8 @@ export default function Index() {
 
       <section className="py-24 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+          <div className="text-center mb-16 animate-fade-in px-4">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
               Немного воспоминаний
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-foreground mx-auto rounded-full" />
@@ -300,7 +306,7 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/files/IMG_0847.png" 
                       alt="Детское фото 1"
-                      className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-[300px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
@@ -315,7 +321,7 @@ export default function Index() {
                     <img 
                       src="https://cdn.poehali.dev/files/IMG_0846.png" 
                       alt="Детское фото 2"
-                      className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-[300px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
