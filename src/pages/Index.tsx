@@ -114,9 +114,9 @@ export default function Index() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               {[
-                { icon: 'Sparkles', title: 'Атмосфера', text: 'Стильная вечеринка в современном пространстве' },
-                { icon: 'Music', title: 'Развлечения', text: 'Отличная музыка и увлекательная программа' },
-                { icon: 'Wine', title: 'Угощения', text: 'Изысканные напитки и деликатесы' }
+                { icon: 'Sparkles', title: 'Кайфово', text: 'Будет невероятная атмосфера и море позитива' },
+                { icon: 'Music', title: 'Весело', text: 'Будем петь и танцевать до упаду' },
+                { icon: 'UtensilsCrossed', title: 'Вкусно', text: 'Покушаем от души, голодным никто не уйдёт' }
               ].map((item, idx) => (
                 <Card 
                   key={idx}
@@ -143,7 +143,7 @@ export default function Index() {
                   <div>
                     <h3 className="text-2xl font-semibold mb-3">Дресс-код</h3>
                     <p className="text-lg text-foreground/80 leading-relaxed">
-                      Элегантный повседневный стиль. Приветствуются стильные и комфортные наряды в тёплых тонах — идеально подойдут бежевые, лавандовые или пастельные оттенки.
+                      <strong>«Как будто ты пришёл не на ту вечеринку»</strong> — приходи в свадебном платье, как будто идёшь на футбольный матч, в офисный костюм или в любом другом неожиданном образе. Чем креативнее, тем лучше!
                     </p>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function Index() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-semibold mb-2">Дата</h3>
-                      <p className="text-lg text-muted-foreground">Суббота, 15 февраля 2025</p>
+                      <p className="text-lg text-muted-foreground">Воскресенье, 18 января 2026</p>
                     </div>
                   </div>
                   
@@ -182,7 +182,7 @@ export default function Index() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-semibold mb-2">Время</h3>
-                      <p className="text-lg text-muted-foreground">19:00 - 02:00</p>
+                      <p className="text-lg text-muted-foreground">16:00</p>
                     </div>
                   </div>
                 </CardContent>
@@ -197,9 +197,10 @@ export default function Index() {
                     <div>
                       <h3 className="text-2xl font-semibold mb-3">Место проведения</h3>
                       <p className="text-lg text-muted-foreground mb-4">
-                        Лофт "Атмосфера"<br />
-                        ул. Примерная, 123<br />
-                        Москва
+                        Антикинотеатр «Облака»<br />
+                        Долгоруковская ул., 38<br />
+                        (цокольный этаж)<br />
+                        г. Симферополь
                       </p>
                       <Button 
                         variant="outline" 
@@ -222,75 +223,38 @@ export default function Index() {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
-                Подтверди присутствие
+                Связаться со мной
               </h2>
               <p className="text-lg text-muted-foreground">
-                Буду благодарен за ответ до 1 февраля
+                Напиши мне в Telegram для подтверждения
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-foreground mx-auto rounded-full mt-6" />
             </div>
 
             <Card className="bg-card/80 backdrop-blur border-border/50 shadow-2xl animate-scale-in">
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-base">Твоё имя *</Label>
-                    <Input
-                      id="name"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="h-12 text-base"
-                      placeholder="Как тебя представить?"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-base">Email *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="h-12 text-base"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="guests" className="text-base">Количество гостей</Label>
-                    <Input
-                      id="guests"
-                      type="number"
-                      min="1"
-                      max="5"
-                      value={formData.guests}
-                      onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                      className="h-12 text-base"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-base">Пожелания или комментарии</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="min-h-24 text-base resize-none"
-                      placeholder="Есть ли особые пожелания?"
-                    />
-                  </div>
-
+              <CardContent className="p-12 text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent-foreground rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Send" size={40} className="text-primary-foreground" />
+                </div>
+                
+                <h3 className="text-2xl font-semibold mb-4">Telegram</h3>
+                <p className="text-muted-foreground mb-8 text-lg">
+                  Напиши мне для подтверждения участия или если есть вопросы
+                </p>
+                
+                <a 
+                  href="https://t.me/pasharux"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button 
-                    type="submit" 
                     size="lg" 
-                    className="w-full text-lg py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                    className="text-xl px-10 py-7 shadow-lg hover:shadow-xl transition-all hover:scale-105"
                   >
-                    Подтвердить участие
-                    <Icon name="Send" className="ml-2" size={20} />
+                    <Icon name="MessageCircle" className="mr-3" size={24} />
+                    @pasharux
                   </Button>
-                </form>
+                </a>
               </CardContent>
             </Card>
           </div>
