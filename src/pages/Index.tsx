@@ -283,6 +283,49 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-24 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent">
+              Немного воспоминаний
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-foreground mx-auto rounded-full" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <Card className="bg-card/80 backdrop-blur border-border/50 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
+                <CardContent className="p-0">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/IMG_0847.png" 
+                      alt="Детское фото 1"
+                      className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <Card className="bg-card/80 backdrop-blur border-border/50 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
+                <CardContent className="p-0">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/IMG_0846.png" 
+                      alt="Детское фото 2"
+                      className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="py-12 bg-gradient-to-t from-primary/10 to-transparent">
         <div className="container mx-auto px-4 text-center">
           <div className="text-6xl mb-4 animate-float">🎂</div>
@@ -290,7 +333,7 @@ export default function Index() {
             Жду встречи с тобой!
           </p>
           <p className="text-sm text-muted-foreground/70">
-            По всем вопросам: <a href="mailto:party@example.com" className="text-primary hover:underline">party@example.com</a>
+            По всем вопросам: <a href="https://t.me/pasharux" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@pasharux</a>
           </p>
         </div>
       </footer>
