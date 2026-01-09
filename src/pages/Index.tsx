@@ -225,7 +225,7 @@ export default function Index() {
               <Card className="bg-card/80 backdrop-blur border-border/50 overflow-hidden">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=34.091380%2C44.956530&z=17&l=map&pt=34.091380,44.956530,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=34.089900%2C44.952250&z=17&l=map&pt=34.089900,44.952250,pm2rdm"
                     width="100%"
                     height="400"
                     frameBorder="0"
