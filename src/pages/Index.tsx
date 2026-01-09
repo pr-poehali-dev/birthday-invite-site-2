@@ -202,15 +202,37 @@ export default function Index() {
                         (цокольный этаж)<br />
                         г. Симферополь
                       </p>
-                      <Button 
-                        variant="outline" 
-                        className="w-full hover:bg-primary hover:text-primary-foreground transition-all"
+                      <a 
+                        href="https://yandex.ru/maps/-/CDdyaBwh" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                       >
-                        <Icon name="Navigation" className="mr-2" size={18} />
-                        Открыть на карте
-                      </Button>
+                        <Button 
+                          variant="outline" 
+                          className="w-full hover:bg-primary hover:text-primary-foreground transition-all"
+                        >
+                          <Icon name="Navigation" className="mr-2" size={18} />
+                          Открыть на карте
+                        </Button>
+                      </a>
                     </div>
                   </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-12 animate-fade-in">
+              <Card className="bg-card/80 backdrop-blur border-border/50 overflow-hidden">
+                <CardContent className="p-0">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=34.104588%2C44.947121&z=17&l=map&pt=34.104588,44.947121,pm2rdm"
+                    width="100%"
+                    height="400"
+                    frameBorder="0"
+                    allowFullScreen
+                    className="w-full"
+                    title="Карта местоположения Антикинотеатр Облака"
+                  />
                 </CardContent>
               </Card>
             </div>
